@@ -11,10 +11,11 @@ autoSwitchAppearance = true
 
 defaultThemeColor = "#FFFFFF"
 
-enableSearch = true
+enableSearch = false
 enableCodeCopy = false
 enableImageLazyLoading = true
 enableImageWebp = true
+enableQuicklink = true
 
 # robots = ""
 fingerprintAlgorithm = "sha256"
@@ -35,6 +36,24 @@ showScrollToTop = true
 layout = "profile" # valid options: page, profile, custom
 showRecent = false
 recentLimit = 5
+
+[article]
+showDate = true
+showDateUpdated = true
+showAuthor = false
+showBreadcrumbs = false
+showDraftLabel = false
+showEdit = false
+editAppendPath = true
+showHeadingAnchors = false
+showPagination = false
+invertPagination = false
+showReadingTime = false
+showTableOfContents = false
+showTaxonomies = false
+showWordCount = false
+showComments = false
+sharingLinks = ["twitter", "reddit", "linkedin", "email"]
 
 [list]
 showBreadcrumbs = false
