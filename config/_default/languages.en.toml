@@ -16,10 +16,10 @@ image = "img/author.jpeg"
 headline = "Linux Geek & Software Engineer"
 bio = "Portfolio website of David Saah, Linux geek and software engineer"
 links = [
-  { email = "mailto:saahdavid17@gmail.com" },
-  { link = "https://wakatime.com/@DaveSaah" },
+  { envelope-solid = "mailto:saahdavid17@gmail.com" },
+  { hashnode = "https://davesaah.hashnode.dev" },
   { github = "https://github.com/DaveSaah" },
-  { hashnode = "https://worksonlinux.hashnode.dev" },
   { linkedin = "https://linkedin.com/in/davesaah" },
-  { x-twitter = "https://twitter.com/worksonlinux" },
+  { x-twitter = "https://twitter.com/dave_saah" },
+  { link = "https://wakatime.com/@DaveSaah" },
 ]
