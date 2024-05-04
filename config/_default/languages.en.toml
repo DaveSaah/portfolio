@@ -4,22 +4,20 @@ languageDirection = "ltr"
 weight = 1
 
 title = "DaveSaah's Portfolio"
-# copyright = "Copy, _right?_ :thinking_face:"
 
 [params]
 dateFormat = "2 January 2006"
 
-# mainSections = ["section1", "section2"]
-description = "David Saah's Portfolio"
+description = "Portfolio website of David Saah, Linux geek and software engineer"
 
 [params.author]
 name = "David Saah"
 image = "img/author.jpeg"
-headline = "I'm only human"
-bio = "A little bit about you"
+headline = "Linux Geek & Software Engineer"
+bio = "Portfolio website of David Saah, Linux geek and software engineer"
 links = [
   { email = "mailto:saahdavid17@gmail.com" },
-  #   { link = "https://link-to-some-website.com/" },
+  { link = "https://wakatime.com/@DaveSaah" },
   { github = "https://github.com/DaveSaah" },
   { hashnode = "https://worksonlinux.hashnode.dev" },
   { linkedin = "https://linkedin.com/in/davesaah" },
