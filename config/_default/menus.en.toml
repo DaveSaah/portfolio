@@ -14,6 +14,8 @@
 name = "cv"
 url = "https://bit.ly/davesaah-cv"
 weight = 60
+[main.params]
+target = "_blank"
 
 [[main]]
 name = "projects"
@@ -21,8 +23,8 @@ url = "/projects/"
 weight = 50
 
 [[main]]
-name = "about"
-url = "/about/"
+name = "experience"
+url = "/experience/"
 weight = 40
 
 # [[main]]
