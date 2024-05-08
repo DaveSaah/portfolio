@@ -74,7 +74,9 @@ distribution that I recommend for them ([Linux Mint](https://linuxmint.com/) or 
 - Exploring the Linux distros and understanding the underlying system through
 trials and errors.
 - Learned multiple languages and frameworks and building projects with them for fun.
-- Tried to build an opensource community (codereviewshop), but it failed after
+- Learned about continuous integration and continuous deployment (*CI/CD*) using
+github actions.
+- Tried to build an opensource community (*codereviewshop*), but it failed after
 2 years because it was unsustainable.
 - Refactored [box-cli maker](https://bit.ly/3ObcqnA)
 tool, resulting in reduced code complexity and
