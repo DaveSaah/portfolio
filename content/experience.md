@@ -81,7 +81,7 @@ github actions.
 - Refactored [box-cli maker](https://bit.ly/3ObcqnA)
 tool, resulting in reduced code complexity and
 improved maintainability.
-- Sharing lessons and writing articles about software development on [hashnode](https://davesaah.hashnode.dev).
+- Sharing lessons and writing articles about software development on [substack](https://davesaah.substack.com).
 
 ## Academic
 
@@ -90,7 +90,7 @@ improved maintainability.
 - Delivered problem-solving workshops for students in collaboration with faculty
 members.
 - The workshops were focused on teaching the students how to think about problems
-and coming up with algorithms for them. Their ideas were verified by implementing 
+and coming up with algorithms for them. Their ideas were verified by implementing
 their solutions in python.
 
 **Computer Science Student @ Ashesi University** &emsp;&emsp; *Sept 2021 - present (Jul 2025)*
