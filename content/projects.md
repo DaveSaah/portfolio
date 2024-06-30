@@ -80,18 +80,6 @@ The projects are listed in the order of what I think is relevant:
 
 - [view on Github](https://github.com/project-graveyard/Text-Analyser)
 
-### Scientific Scribbles
-
-- [view on Github](https://github.com/project-graveyard/Scientific)
-
-### Spotify Clone
-
-- [view on Github](https://github.com/project-graveyard/spotify-clone)
-
-### ReadText
-
-- [view on Github](https://github.com/project-graveyard/ReadText)
-
 ### Passgen
 
 - [view on Github](https://github.com/project-graveyard/passgen)
