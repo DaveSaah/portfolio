@@ -14,9 +14,21 @@ The projects are listed in the order of what I think is relevant:
 
 ### new-cpp-proj
 
+I was tired of running `mkdir` and `touch` commands during every lecture, so I
+decided to automate the whole process to save time.
+The end product was a tool that simplifies
+
 - [view on Github](https://github.com/DaveSaah/new-cpp-proj)
 
 ### Todo App
+
+This was the first project I built to learn react. In the process, I learned
+about the following:
+
+- Javascript promises and asynchronous communications.
+- Setting up github actions.
+- How to use firebase hosting as well as cloud store database.
+- Had my first introduction to bootstrap css.
 
 - [view on Github](https://github.com/project-graveyard/todo-app)
 
