@@ -28,9 +28,8 @@ My experiences can be categorised into the following:
   production issues.
 
 > I was able to grasp the usefulness of logs when there was a bug in production
-> in one of the banks critical infrastructure and it took a few minutes to resolve
-> the issue because the trail of logs made it easier to identify the hotspot and
-> patch it up before any significant damage was done.
+> and it took a few minutes to resolve because the trail of logs made it easier
+> to identify the hotspot and patch it up before any significant damage was done.
 
 - Learned about how rigorous tests and simulations are made to ensure the
   integrity of the banks software and infrastructure.
