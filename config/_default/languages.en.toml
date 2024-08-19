@@ -20,6 +20,5 @@ links = [
   { github = "https://github.com/DaveSaah" },
   { link = "https://davesaah.substack.com" },
   { linkedin = "https://linkedin.com/in/davesaah" },
-  { x-twitter = "https://twitter.com/worksonlinux" },
   { globe = "https://wakatime.com/@DaveSaah" },
 ]
