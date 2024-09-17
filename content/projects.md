@@ -8,6 +8,25 @@ layout = "simple"
 
 The projects are listed in no particular order:
 
+### Some -- 2024 (WIP)
+
+This project is a tree-walking interpreter I am building to see, understand and
+appreciate what happens when we run high-level programs. The proposed features
+include, but is not limited to:
+
+- Simple syntax.
+- Variable bindings.
+- Data types: integers, booleans.
+- Arithmetic expressions.
+- Built-in functions (yet to be decided*).
+- First class functions.
+- Recursion.
+- Higher order functions.
+- Closures.
+- Collection data structures: strings, array, hash tables.
+
+[See project on Github](https://github.com/DaveSaah/some)
+
 ### Days -- 2024
 
 One of the favourite tools I built. It has all the features of a fully functional
@@ -20,7 +39,7 @@ cli application.
   - Has command autocompletion script for bash, fish and zsh shells.
   - Allows customisation via cli interface without needing to edit the config file.
 
-- [view on Github](https://github.com/project-graveyard/days)
+[See project on Github](https://github.com/project-graveyard/days)
 
 ### new-cpp-proj -- 2024
 
@@ -28,7 +47,7 @@ I was tired of running `mkdir` and `touch` commands during every lecture, so I
 decided to automate the whole process to save time.
 The end product was a tool that simplifies
 
-- [view on Github](https://github.com/project-graveyard/new-cpp-proj)
+[See project on Github](https://github.com/project-graveyard/new-cpp-proj)
 
 ### Choreflow API -- 2024
 
@@ -38,7 +57,7 @@ OpenAPI Specification standard.
 
 The purpose of this project was to learn how to develop APIs in Go.
 
-- [view on Github](https://github.com/boring-school-work/choreflow-api)
+[See project on Github](https://github.com/boring-school-work/choreflow-api)
 
 ### Self Reference -- 2021
 
@@ -50,13 +69,13 @@ There was not much to learn here since it was a basic static website with html,
 css, and markdown. Nonetheless, one valuable skill I learned in the process was
 how to host websites using firebase.
 
-- [view on Github](https://github.com/project-graveyard/Self-Reference)
+[See project on Github](https://github.com/project-graveyard/Self-Reference)
 
 ### Simple Web Server -- 2023
 
 I built a simple web server to test how http requests and responses work in Go.
 
-- [view on Github](https://github.com/DaveSaah/simple-web-server)
+[See project on Github](https://github.com/DaveSaah/simple-web-server)
 
 ### Codereviewshop -- 2021
 
@@ -70,7 +89,8 @@ Some of the services I rendered on codereviewshop included:
 - Teaching problem solving
 - Teaching how to use software tools like the command line and git.
 
-- [view on Github](https://github.com/project-graveyard/codereviewshop)
+[See project on Github](https://github.com/project-graveyard/codereviewshop) \
+[Visit website](https://codereviewshop.web.app/)
 
 ### Codereviewshop's Blog - 2022
 
@@ -78,7 +98,8 @@ Codereviewshop blog is a subsystem of codereviewshop were I shared my lessons an
 advice on my programming journey. It was fun building it using hugo. However, I
 migrated all the blog content to my official [substack](https://davesaah.substack.com).
 
-- [view on Github](https://github.com/project-graveyard/blog)
+[See project on Github](https://github.com/project-graveyard/blog) \
+[Visit website](https://codereviewblog.web.app/)
 
 ### Calculator -- 2020
 
@@ -92,7 +113,7 @@ the calculator include:
 - Calculating factorials
 - and 2D vector arithmetic.
 
-- [view on Github](https://github.com/project-graveyard/Calculator)
+[See project on Github](https://github.com/project-graveyard/Calculator)
 
 ### Item Check Counter -- 2021
 
@@ -106,7 +127,7 @@ The application allows you to keep track of items in stock, add or remove items,
 produce receipts, automated stocks update and saving of daily transactions to files
 for easy monitoring of day to day transactions.
 
-- [view on Github](https://github.com/project-graveyard/Item-Check)
+[See project on Github](https://github.com/project-graveyard/Item-Check)
 
 ### IRB Tracker -- 2024
 
@@ -118,7 +139,7 @@ Though I learned a great deal using htmx and the concept of hypermedia as the en
 of application state, I only did the bare minimum to get my marks for my university
 course. It is far from production ready.
 
-- [view on Github](https://github.com/boring-school-work/irb-tracker)
+[See project on Github](https://github.com/boring-school-work/irb-tracker)
 
 ### Todo App -- 2021
 
@@ -130,14 +151,15 @@ about the following:
 - How to use firebase hosting as well as cloud store database.
 - Had my first introduction to bootstrap css.
 
-- [view on Github](https://github.com/project-graveyard/todo-app)
+[See project on Github](https://github.com/project-graveyard/todo-app) \
+[Visit website](https://mytodo-ep.web.app/)
 
 ### Voting System -- 2024
 
 An incomplete side project to develop a fault tolerant voting system for my university.
 However, I discontinued the project when I learned it was not desired.
 
-- [view on Github](https://github.com/project-graveyard/voting-system)
+[See project on Github](https://github.com/project-graveyard/voting-system)
 
 ### Hackathon Project: A Portfolio Site -- 2023
 
@@ -145,4 +167,4 @@ This project was my first attempt at participating in a hackathon. It was 6/10
 experience because the demands of the project were not clear enough till the
 winners were announced.
 
-- [view on Github](https://github.com/project-graveyard/portfolio)
+[See project on Github](https://github.com/project-graveyard/portfolio)
