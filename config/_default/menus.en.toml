@@ -27,6 +27,11 @@ name = "experience"
 url = "/experience/"
 weight = 40
 
+[[main]]
+name = "tools"
+url = "/tools/"
+weight = 30
+
 # [[main]]
 # identifier = "search"
 # weight = 99
