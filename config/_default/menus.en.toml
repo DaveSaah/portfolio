@@ -32,9 +32,10 @@ name = "tools"
 url = "/tools/"
 weight = 30
 
-# [[main]]
-# identifier = "search"
-# weight = 99
-#
-# [main.params]
-# action = "search"
+
+[[main]]
+identifier = "search"
+weight = 99
+
+[main.params]
+action = "search"
