@@ -18,8 +18,7 @@ bio = "Portfolio website of David Saah, Linux geek and software engineer"
 links = [
   { email = "mailto:davesaah@gmail.com" },
   { github = "https://github.com/DaveSaah" },
-  { pencil = "https://davesaah.substack.com" },
+  # { pencil = "https://davesaah.substack.com" },
   { x-twitter = "https://x.com/davesaah_" },
   { linkedin = "https://linkedin.com/in/davesaah" },
-  { link = "https://www.upwork.com/freelancers/~011b9cd52fa211c6a0" },
 ]

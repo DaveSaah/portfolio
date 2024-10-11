@@ -33,11 +33,6 @@ url = "/tools/"
 weight = 30
 
 [[main]]
-name = "services"
-url = "/services/"
-weight = 20
-
-[[main]]
 identifier = "search"
 weight = 99
 

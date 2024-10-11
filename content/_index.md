@@ -19,5 +19,3 @@ creating powerful and efficient software hidden from the spotlight.
 Whenever I manage to carve out some time, I join [ThePrimeagen's](https://twitch.tv/ThePrimeagen)
 stream. It's my go-to place for soaking up new technologies and innovative
 problem-solving techniques. The community inspires me to get better each day.
-
-We can have a quick chat to discuss common interests and ideas [here](https://cal.com/davesaah/quick-chat).
