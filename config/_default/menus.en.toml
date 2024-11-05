@@ -10,12 +10,12 @@
 # overridden by providing a weight value. The menu will then be
 # ordered by weight from lowest to highest.
 
-# [[main]]
-# name = "cv"
-# url = "https://bit.ly/davesaah-cv"
-# weight = 60
-# [main.params]
-# target = "_blank"
+[[main]]
+name = "cv"
+url = "https://docs.google.com/document/d/1ULfaUKOO4E5eGTznVB8WbAGhDlDtZgsJ5umLocBdcL8/edit?usp=sharing"
+weight = 60
+[main.params]
+target = "_blank"
 
 [[main]]
 name = "projects"
