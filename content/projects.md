@@ -39,7 +39,7 @@ cli application.
   - Has command autocompletion script for bash, fish and zsh shells.
   - Allows customisation via cli interface without needing to edit the config file.
 
-[See project on Github](https://github.com/project-graveyard/days)
+[See project on Github](https://github.com/DaveSaah/days)
 
 ### new-cpp-proj -- 2024
 
@@ -47,7 +47,7 @@ I was tired of running `mkdir` and `touch` commands during every lecture, so I
 decided to automate the whole process to save time.
 The end product was a tool that simplifies
 
-[See project on Github](https://github.com/project-graveyard/new-cpp-proj)
+[See project on Github](https://github.com/DaveSaah/new-cpp-proj)
 
 ### Choreflow API -- 2024
 
@@ -57,7 +57,7 @@ OpenAPI Specification standard.
 
 The purpose of this project was to learn how to develop APIs in Go.
 
-[See project on Github](https://github.com/boring-school-work/choreflow-api)
+[See project on Github](https://github.com/DaveSaah/choreflow-api)
 
 ### Self Reference -- 2021
 
@@ -69,7 +69,7 @@ There was not much to learn here since it was a basic static website with html,
 css, and markdown. Nonetheless, one valuable skill I learned in the process was
 how to host websites using firebase.
 
-[See project on Github](https://github.com/project-graveyard/Self-Reference)
+[See project on Github](https://github.com/DaveSaah/Self-Reference)
 
 ### Simple Web Server -- 2023
 
@@ -89,7 +89,7 @@ Some of the services I rendered on codereviewshop included:
 - Teaching problem solving
 - Teaching how to use software tools like the command line and git.
 
-[See project on Github](https://github.com/project-graveyard/codereviewshop) \
+[See project on Github](https://github.com/DaveSaah/codereviewshop) \
 [Visit website](https://codereviewshop.web.app/)
 
 ### Codereviewshop's Blog - 2022
@@ -98,7 +98,7 @@ Codereviewshop blog is a subsystem of codereviewshop were I shared my lessons an
 advice on my programming journey. It was fun building it using hugo. However, I
 migrated all the blog content to my official [substack](https://davesaah.substack.com).
 
-[See project on Github](https://github.com/project-graveyard/blog) \
+[See project on Github](https://github.com/DaveSaah/blog) \
 [Visit website](https://codereviewblog.web.app/)
 
 ### Calculator -- 2020
@@ -113,7 +113,7 @@ the calculator include:
 - Calculating factorials
 - and 2D vector arithmetic.
 
-[See project on Github](https://github.com/project-graveyard/Calculator)
+[See project on Github](https://github.com/DaveSaah/Calculator)
 
 ### Item Check Counter -- 2021
 
@@ -127,7 +127,7 @@ The application allows you to keep track of items in stock, add or remove items,
 produce receipts, automated stocks update and saving of daily transactions to files
 for easy monitoring of day to day transactions.
 
-[See project on Github](https://github.com/project-graveyard/Item-Check)
+[See project on Github](https://github.com/DaveSaah/Item-Check)
 
 ### IRB Tracker -- 2024
 
@@ -139,7 +139,7 @@ Though I learned a great deal using htmx and the concept of hypermedia as the en
 of application state, I only did the bare minimum to get my marks for my university
 course. It is far from production ready.
 
-[See project on Github](https://github.com/boring-school-work/irb-tracker)
+[See project on Github](https://github.com/DaveSaah/irb-tracker)
 
 ### Todo App -- 2021
 
@@ -151,7 +151,7 @@ about the following:
 - How to use firebase hosting as well as cloud store database.
 - Had my first introduction to bootstrap css.
 
-[See project on Github](https://github.com/project-graveyard/todo-app) \
+[See project on Github](https://github.com/DaveSaah/todo-app) \
 [Visit website](https://mytodo-ep.web.app/)
 
 ### Voting System -- 2024
@@ -159,7 +159,7 @@ about the following:
 An incomplete side project to develop a fault tolerant voting system for my university.
 However, I discontinued the project when I learned it was not desired.
 
-[See project on Github](https://github.com/project-graveyard/voting-system)
+[See project on Github](https://github.com/DaveSaah/voting-system)
 
 ### Hackathon Project: A Portfolio Site -- 2023
 
@@ -167,4 +167,4 @@ This project was my first attempt at participating in a hackathon. It was 6/10
 experience because the demands of the project were not clear enough till the
 winners were announced.
 
-[See project on Github](https://github.com/project-graveyard/portfolio)
+[See project on Github](https://github.com/DaveSaah/portfolio-mlh-hackathon)
