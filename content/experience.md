@@ -36,7 +36,7 @@ My experiences can be categorised into the following:
 
 ## Job Simulations
 
-**[Software Engineering @ Goldman Sachs](https://bit.ly/49F4mDy)** &emsp;&emsp; _June 2023_
+**[Software Engineering @ Goldman Sachs](https://bit.ly/4hgzK0a)** &emsp;&emsp; _June 2023_
 
 - Completed a job simulation as a Goldman Sachs governance analyst responsible
   for assessing IT security and suggesting improvements.
@@ -85,7 +85,7 @@ Yet to be filled.
   github actions.
 - Tried to build an opensource community (_codereviewshop_), but it failed after
   2 years because it was unsustainable.
-- Refactored [box-cli maker](https://bit.ly/3ObcqnA)
+- Refactored [box-cli maker](https://bit.ly/3UkqnTa)
   tool, resulting in reduced code complexity and
   improved maintainability.
 - Sharing lessons and writing articles about software development on [substack](https://davesaah.substack.com).
