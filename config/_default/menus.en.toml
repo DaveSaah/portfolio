@@ -33,6 +33,11 @@ url = "/tools/"
 weight = 30
 
 [[main]]
+name = "writings"
+url = "/posts/"
+weight = 20
+
+[[main]]
 identifier = "search"
 weight = 99
 
