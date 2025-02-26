@@ -45,7 +45,7 @@ cli application.
 
 I was tired of running `mkdir` and `touch` commands during every lecture, so I
 decided to automate the whole process to save time.
-The end product was a tool that simplifies
+The end product was a tool that simplifies the creation of C++ projects.
 
 [See project on Github](https://github.com/DaveSaah/new-cpp-proj)
 
@@ -88,6 +88,8 @@ Some of the services I rendered on codereviewshop included:
 - Teaching programming languages
 - Teaching problem solving
 - Teaching how to use software tools like the command line and git.
+
+I no longer use it.
 
 [See project on Github](https://github.com/DaveSaah/codereviewshop) \
 [Visit website](https://codereviewshop.web.app/)
@@ -153,18 +155,3 @@ about the following:
 
 [See project on Github](https://github.com/DaveSaah/todo-app) \
 [Visit website](https://mytodo-ep.web.app/)
-
-### Voting System -- 2024
-
-An incomplete side project to develop a fault tolerant voting system for my university.
-However, I discontinued the project when I learned it was not desired.
-
-[See project on Github](https://github.com/DaveSaah/voting-system)
-
-### Hackathon Project: A Portfolio Site -- 2023
-
-This project was my first attempt at participating in a hackathon. It was 6/10
-experience because the demands of the project were not clear enough till the
-winners were announced.
-
-[See project on Github](https://github.com/DaveSaah/portfolio-mlh-hackathon)

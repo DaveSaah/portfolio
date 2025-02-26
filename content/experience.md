@@ -15,8 +15,6 @@ My experiences can be categorised into the following:
    company looks like.
 3. **Academic:** Involves academic timeline, and extracurricular activities.
 4. **Miscellaneous:** Includes volunteering and other uncategorised experiences.
-5. **LFX Mentorship:** Includes mentorship and training offered by the Linux Software
-   Foundation.
 
 ## Professional
 
@@ -50,10 +48,6 @@ My experiences can be categorised into the following:
   - Cryptography basics.
   - Password best practice.
   - Password cracking.
-
-## LFX Mentorship
-
-Yet to be filled.
 
 ## Miscellaneous
 

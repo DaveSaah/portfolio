@@ -15,9 +15,8 @@ This section contains the list of tools that I use on the daily.
 | String Processing                                   | Python, Awk       |
 | Network Programs (APIs, cloud, devops, backend dev) | Go, JSON          |
 | Documentation                                       | Markdown          |
-| Command Line Utilities                              | Go (cobra)        |
+| Command Line Utilities                              | Go (cobra), Bash  |
 | Configuration                                       | YAML, TOML        |
-| Logic Programming                                   | Swi-Prolog        |
 | Functional Programming                              | Haskell           |
 | Working with JSON                                   | jq                |
 | Customisation/extension of existing apps            | Lua               |
@@ -26,8 +25,8 @@ This section contains the list of tools that I use on the daily.
 
 | Use Cases            | Tools                                             |
 | -------------------- | ------------------------------------------------- |
-| Text Editor          | Neovim                                            |
+| Text Editor          | Neovim, zed, VS Code                              |
 | Operating System     | Linux (debian-based, arch linux-based, rpm-based) |
-| Version Control      | git, github, gitea                                |
-| Container Technology | docker                                            |
+| Version Control      | git, github                                       |
+| Container Technology | docker, minikube                                  |
 | Universal Build Tool | make                                              |
