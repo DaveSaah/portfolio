@@ -11,7 +11,7 @@ This section contains the list of tools that I use on the daily.
 
 | Use Cases                                           | Languages         |
 | --------------------------------------------------- | ----------------- |
-| Shell Scripting                                     | Bash, Zsh, Python |
+| Shell Scripting                                     | Bash, Python      |
 | String Processing                                   | Python, Awk       |
 | Network Programs (APIs, cloud, devops, backend dev) | Go, JSON          |
 | Documentation                                       | Markdown          |
