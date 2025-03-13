@@ -8,15 +8,17 @@ title = "DaveSaah's Portfolio"
 [params]
 dateFormat = "2 January 2006"
 
-description = "Portfolio website of David Saah, Backend/Systems Engineer & CLI Junkie"
+description = "Portfolio website of David Saah, a software engineering lead."
 
 [params.author]
 name = "David Saah"
 image = "img/author.jpeg"
-headline = "Backend/Systems Engineer & CLI Junkie"
-bio = "Portfolio website of David Saah, Backend/Systems Engineer & CLI Junkie"
+headline = "Software Engineering Lead"
+bio = "Portfolio website of David Saah, a software engineering lead."
 links = [
   { email = "mailto:davesaah@gmail.com" },
   { github = "https://github.com/DaveSaah" },
+  { x-twitter = "https://x.com/DavidSaahOnline" },
+  { youtube = "https://youtube.com/@DavidSaahOnline" },
   { linkedin = "https://linkedin.com/in/davesaah" },
 ]
