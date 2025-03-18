@@ -2,7 +2,7 @@
 title = 'Tools'
 date = 2024-09-17T17:30:34Z
 draft = false
-description = "A list of tools that David Saah uses"
+description = "A list of tools that David Abeiku Saah uses"
 +++
 
 This section contains the list of tools that I use on the daily.

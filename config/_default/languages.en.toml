@@ -8,13 +8,13 @@ title = "DaveSaah's Portfolio"
 [params]
 dateFormat = "2 January 2006"
 
-description = "Portfolio website of David Saah, a software engineering lead."
+description = "Portfolio website of David Abeiku Saah, a software engineering lead."
 
 [params.author]
-name = "David Saah"
+name = "David Abeiku Saah"
 image = "img/author.jpeg"
 headline = "Software Engineering Lead"
-bio = "Portfolio website of David Saah, a software engineering lead."
+bio = "Portfolio website of David Abeiku Saah, a software engineering lead."
 links = [
   { email = "mailto:davesaah@gmail.com" },
   { github = "https://github.com/DaveSaah" },
