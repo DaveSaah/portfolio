@@ -38,20 +38,20 @@ showRecent = false
 recentLimit = 5
 
 [article]
-showDate = true
-showDateUpdated = true
-showAuthor = true
-showBreadcrumbs = true
-showDraftLabel = true
+showDate = false
+showDateUpdated = false
+showAuthor = false
+showBreadcrumbs = false
+showDraftLabel = false
 showEdit = false
 editAppendPath = true
 showHeadingAnchors = false
 showPagination = false
 invertPagination = false
-showReadingTime = true
-showTableOfContents = true
+showReadingTime = false
+showTableOfContents = false
 showTaxonomies = true
-showWordCount = true
+showWordCount = false
 showComments = false
 
 [list]
