@@ -3,7 +3,7 @@ title = 'Experience'
 date = 2024-05-04T19:30:32Z
 draft = false
 layout = "simple"
-description = "David Abeiku Saah's experience in the technology field"
+description = "David Saah's experience in the technology field"
 +++
 
 My experiences can be categorised into the following:

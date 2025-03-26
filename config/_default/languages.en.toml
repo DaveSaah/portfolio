@@ -8,18 +8,16 @@ title = "DaveSaah's Portfolio"
 [params]
 dateFormat = "2 January 2006"
 
-description = "Portfolio website of David Abeiku Saah."
+description = "Portfolio website of David Saah."
 
 [params.author]
-name = "David Abeiku Saah"
+name = "David Saah"
 image = "img/author.jpeg"
 headline = "Solving Problems With People, Empowering Businesses to Succeed."
-bio = "Portfolio website of David Abeiku Saah."
+bio = "Portfolio website of David Saah."
 links = [
   { email = "mailto:davesaah@gmail.com" },
   { github = "https://github.com/DaveSaah" },
   { x-twitter = "https://x.com/DavidSaahOnline" },
-  { youtube = "https://youtube.com/@DavidSaahOnline" },
   { linkedin = "https://linkedin.com/in/davesaah" },
-  { discord = "https://discord.gg/paEhpEZN" },
 ]
