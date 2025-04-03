@@ -51,7 +51,7 @@ My experiences can be categorised into the following:
 
 ## Miscellaneous
 
-**Tutor @ [ChariotAfrica](https://www.chariotafrica.com/)** &emsp;&emsp; _Mar 2024 - Apr 2024_
+**Tutor @ [ChariotAfrica](https://www.chariotafrica.com/)** &emsp;&emsp; _Mar 2024 - May 2024_
 
 - Assisted the team in setting up devices for basic digital training.
 - Provided a workshop on problem-solving. Introduced the students to algorithms
@@ -63,14 +63,14 @@ My experiences can be categorised into the following:
 - I participate in conversations about software development and learn from
   experienced seniors, while having fun.
 
-**Linux Ambassador (self made)** &emsp;&emsp; _Sep 2021 - present_
+**Linux Ambassador (self made)** &emsp;&emsp; _Sep 2021 - Jan 2025_
 
 - I create awareness of the pros and cons of using Linux.
 - I guide new users through initial setup and configuration of the Linux
   distribution that I recommend for them ([Linux Mint](https://linuxmint.com/) or
   [Fedora](https://fedoraproject.org/)).
 
-**Opensource Explorer (self made)** &emsp;&emsp; _Sep 2020 - Mar 2024_
+**Opensource Explorer (self made)** &emsp;&emsp; _Sep 2020 - Jan 2025_
 
 - Exploring the Linux distros and understanding the underlying system through
   trials and errors.
