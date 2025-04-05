@@ -18,6 +18,5 @@ bio = "Portfolio website of David Saah."
 links = [
   { email = "mailto:davesaah@gmail.com" },
   { github = "https://github.com/DaveSaah" },
-  { x-twitter = "https://x.com/DavidSaahOnline" },
   { linkedin = "https://linkedin.com/in/davesaah" },
 ]
