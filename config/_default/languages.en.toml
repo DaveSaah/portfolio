@@ -16,7 +16,6 @@ image = "img/author.jpeg"
 headline = "Solving Problems With People, Empowering Businesses to Succeed."
 bio = "Portfolio website of David Saah."
 links = [
-  { email = "mailto:davesaah@gmail.com" },
-  { github = "https://github.com/DaveSaah" },
-  { x-twitter = "https://x.com/_davesaah" },
+  { email = "mailto:lael.yulad@gmail.com" },
+  { github = "https://github.com/lael-yulad" },
 ]
