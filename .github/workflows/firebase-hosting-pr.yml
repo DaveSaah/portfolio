@@ -12,18 +12,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
 
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v2
+      - name: Setup bun
+        uses: oven-sh/setup-bun@v2
         with:
-          hugo-version: "0.143.0"
-          extended: true
+          bun-version-file: '.bun-version'
 
-      - name: Build Site
-        run: hugo --minify
+      - name: Install Dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Build
+        run: bun run build
 
       - name: Firebase Deploy
         uses: FirebaseExtended/action-hosting-deploy@v0
