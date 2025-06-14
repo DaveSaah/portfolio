@@ -1,0 +1,10 @@
+---
+import { defaultLanguage, type LanguageCode } from '@/i18n/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+const currentLocale =
+  (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+---
+
+<a href={getRelativeLocaleUrl(currentLocale)}>
+  <span class="text-2xl font-bold text-primary">DaveSaah</span>
+</a>

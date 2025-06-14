@@ -1,0 +1,101 @@
+---
+import { defaultLanguage, type LanguageCode } from '@/i18n/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { cn } from '@/lib/utils';
+import ThemeToggle from './ThemeToggle.astro';
+import { LanguageSelector } from './LanguageSelector';
+import { type LanguageSelectorItem } from '@/lib/i18n-utils';
+
+import type { NavItem } from '@/layouts/BaseLayout.astro';
+import { buttonVariants } from './ui/button';
+
+const currentLocale =
+  (Astro.currentLocale as LanguageCode | undefined) ?? defaultLanguage;
+const currentPathname = Astro.url.pathname;
+
+export interface Props {
+  navItems: NavItem[];
+}
+
+const { navItems } = Astro.props;
+---
+
+<nav
+  class="md:hidden fixed bottom-0 left-0 z-50 w-full bg-background p-2 border-t border-border"
+  role="navigation"
+  aria-label="Main navigation"
+>
+  <div
+    class:list={[
+      'flex h-16 max-w-screen-sm mx-auto justify-between items-center',
+    ]}
+  >
+    {
+      navItems.map((item) => {
+        const localizedHref = getRelativeLocaleUrl(currentLocale, item.href);
+
+        // Determine active state more accurately for localized paths
+        let isActive = currentPathname === localizedHref;
+        // If it's a root link for a non-default language (e.g., /fr for /fr/)
+        if (
+          item.href === '/' &&
+          localizedHref !== '/' &&
+          currentPathname === localizedHref.replace(/\/$/, '')
+        ) {
+          isActive = true;
+        }
+        // For nested paths, check if the current path starts with the localized href + '/'
+        if (
+          item.href !== '/' &&
+          currentPathname.startsWith(`${localizedHref}/`)
+        ) {
+          isActive = true;
+        }
+        // Special case for default language root
+        if (
+          item.href === '/' &&
+          localizedHref === '/' &&
+          currentPathname === '/'
+        ) {
+          isActive = true;
+        }
+
+        const Icon = item.icon;
+        const title = item.label;
+
+        return (
+          <a
+            href={localizedHref}
+            aria-label={title}
+            aria-current={isActive ? 'page' : undefined}
+            class={cn(
+              'relative flex flex-col items-center justify-center transition-colors duration-200 w-full',
+              isActive
+                ? 'text-primary font-semibold'
+                : 'text-muted-foreground hover:text-foreground'
+            )}
+            style="min-width: 48px; min-height: 48px;"
+          >
+            <span
+              class={cn(
+                'flex items-center justify-center rounded-full transition bg-transparent',
+                isActive ? 'bg-primary/10' : ''
+              )}
+              style="width: 36px; height: 36px;"
+            >
+              <Icon class="size-5" />
+            </span>
+            <span class="text-[10px] truncate max-w-[90%] text-center leading-tight">
+              {title}
+            </span>
+            {isActive && (
+              <span class="absolute -bottom-2 left-1/2 -translate-x-1/2 w-6 h-1 rounded-full bg-primary" />
+            )}
+          </a>
+        );
+      })
+    }
+    {/* Theme Toggle Button */}
+    <ThemeToggle />
+  </div>
+</nav>
