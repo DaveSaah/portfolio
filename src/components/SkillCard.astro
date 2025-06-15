@@ -15,35 +15,6 @@ import {
   Network,
   type LucideIcon,
 } from 'lucide-react';
-import type { IconType } from 'react-icons';
-import {
-  SiReact,
-  SiAngular,
-  SiTypescript,
-  SiAstro,
-  SiTailwindcss,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-  SiNodedotjs,
-  SiBun,
-  SiDeno,
-  SiExpress,
-  SiNestjs,
-  SiHono,
-  SiPython,
-  SiPostgresql,
-  SiMysql,
-  SiMongodb,
-  SiSqlite,
-  SiPrisma,
-  SiDrizzle,
-  SiFigma,
-  SiDocker,
-  SiKubernetes,
-  SiGit,
-  SiAmazon,
-} from 'react-icons/si';
 
 // Define the mapping from iconName to Lucide icon component
 // Mapping for Lucide icons (general skill category)
@@ -55,37 +26,7 @@ const iconComponents: Record<string, LucideIcon> = {
   Network,
 };
 
-// Mapping for react-icons (specific technologies)
-const techIconComponents: Record<string, IconType> = {
-  react: SiReact,
-  angular: SiAngular,
-  typescript: SiTypescript,
-  astro: SiAstro,
-  tailwindcss: SiTailwindcss,
-  html5: SiHtml5,
-  css3: SiCss3,
-  javascript: SiJavascript,
-  nodejs: SiNodedotjs,
-  bun: SiBun,
-  deno: SiDeno,
-  express: SiExpress,
-  nestjs: SiNestjs,
-  hono: SiHono,
-  python: SiPython,
-  postgresql: SiPostgresql,
-  mysql: SiMysql,
-  mongodb: SiMongodb,
-  sqlite: SiSqlite,
-  prisma: SiPrisma,
-  drizzleorm: SiDrizzle,
-  figma: SiFigma,
-  docker: SiDocker,
-  kubernetes: SiKubernetes,
-  git: SiGit,
-  amazonservices: SiAmazon,
-};
-
-import type { Technology } from '@/data/skills'; // Import the Technology type
+import type { Technology } from '@/features/projects';
 
 export type Props = {
   title: string;
@@ -140,13 +81,7 @@ const IconComponent = iconComponents[iconName];
     technologies && technologies.length > 0 && (
       <CardFooter className="pt-3 pb-4 flex flex-wrap gap-x-3 gap-y-2 justify-start items-center">
         {technologies.map((tech) => {
-          const TechIcon = techIconComponents[tech.id.toLowerCase()];
-          return TechIcon ? (
-            <TechIcon
-              className="size-5 text-muted-foreground hover:text-primary transition-colors"
-              title={tech.name}
-            />
-          ) : null;
+          return <p class="text-xs">{tech}</p>;
         })}
       </CardFooter>
     )

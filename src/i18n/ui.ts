@@ -9,14 +9,14 @@ export type LanguageCode = keyof typeof languages;
 export const ui = {
   en: {
     projectsContent: {
-      sampleProject: {
-        title: 'Sample Project',
+      portfolio: {
+        title: 'Portfolio',
         description: 'This is a sample project for the template.',
-        imageAltText: 'Placeholder image for the sample project',
+        imageAltText: 'Placeholder image for the portfolio',
         categoryText: 'Web Application',
-        dateText: 'January 2025',
+        dateText: 'June 2025',
         detailedDescription:
-          'A more detailed description of this sample project, showing how to structure content for the project detail page.',
+          'A portfolio website showcasing my skills, projects, blog and services.',
         keyFeatures: {
           responsiveDesign: {
             title: 'Responsive Design',
@@ -35,23 +35,15 @@ export const ui = {
           // },
         },
         challenges:
-          'Description of challenges encountered while creating this sample project.',
-        learnings: 'Description of learnings from this sample project.',
+          "It was initially difficult to understand the astro template. However, neovim's telescope made it easier to find the code that renders specific elements on the page.",
+        learnings:
+          "I learned about how other developers choose to structure their code and make it extensible. I mean, not all the design decisions where suitable for my use case, but it was amazing to see how customising it was easier. Takeways: You can't cover all use cases and make it easier for other developers to delete your code.",
       },
     },
     skillsContent: {
-      frontendDevelopment: {
-        title: 'Frontend Development',
-        description:
-          'Building interactive and high-performance user interfaces.',
-      },
       backendDevelopment: {
         title: 'Backend Development',
         description: 'Constructing robust server logic and APIs.',
-      },
-      uiUxDesign: {
-        title: 'UI/UX Design',
-        description: 'Designing intuitive and aesthetic user experiences.',
       },
       devOps: {
         title: 'DevOps',
@@ -76,7 +68,7 @@ export const ui = {
     homePage: {
       pageTitle: 'Home | David Saah - Problem Solver & Ambassador',
       pageDescription:
-        'Welcome to the portfolio of YOUR_NAME, a FullStack developer passionate about creating innovative web experiences.',
+        'Welcome to the portfolio of David Saah, a problem solver and an ambassador.',
       heroGreeting: "Hi, I'm David Saah",
       heroSubtitlePart1: 'Problem Solver',
       heroSubtitlePart2: 'Ambassador',
@@ -85,7 +77,7 @@ export const ui = {
       heroViewWorkButton: 'View My Work',
       heroContactButton: 'Get In Touch',
       heroImageAlt:
-        'Illustration representing YOUR_NAME or a development concept',
+        'Illustration representing David Saah or a development concept',
       featuredProjectsTitle: '3 latest projects',
       featuredProjectsDescription:
         "Here are some of the projects I've recently worked on. Feel free to explore!",
@@ -176,7 +168,7 @@ export const ui = {
     projectsPage: {
       title: 'My Projects',
       metaTitle: 'Projects | David Saah',
-      metaDescription: "Discover all of YOUR_NAME's projects.",
+      metaDescription: "Discover all of David Saah's projects.",
       noProjects: 'No projects to display at the moment.',
       noProjectsDescription:
         "It seems that you don't have any projects to display at the moment.",

@@ -1,0 +1,134 @@
+---
+import Heading from '@/components/Heading.astro';
+import SkillCard from '@/components/SkillCard.astro';
+import { buttonVariants } from '@/components/ui/button';
+import type { LanguageCode } from '@/i18n/ui';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { Calendar, Dumbbell } from 'lucide-react';
+
+import FeaturedProjectPreview from '../components/FeaturedProjectPreview.astro';
+import type { TranslatedProject, TranslatedSkill } from '../type';
+
+export type Props = {
+  lang: LanguageCode;
+  projects: Array<TranslatedProject>;
+  skills: Array<TranslatedSkill>;
+  heroGreeting: string;
+  heroSubtitlePart1: string;
+  heroSubtitlePart2: string;
+  heroIntroduction: string;
+  heroViewWorkButton: string;
+  heroContactButton: string;
+  imageNotAvailable: string;
+  featuredProjectsTitle: string;
+  featuredProjectsDescription: string;
+  mySkillsTitle: string;
+  mySkillsDescription: string;
+  projectPreviewCtaText: string; // Added for specific project CTA
+};
+
+const {
+  lang,
+  projects,
+  skills,
+  heroGreeting,
+  heroSubtitlePart1,
+  heroSubtitlePart2,
+  heroIntroduction,
+  heroViewWorkButton,
+  heroContactButton,
+  featuredProjectsTitle,
+  featuredProjectsDescription,
+  mySkillsTitle,
+  mySkillsDescription,
+  projectPreviewCtaText,
+} = Astro.props;
+---
+
+<section class="py-12 md:py-16">
+  <div class="flex items-center justify-center">
+    {/* Hero Text Column */}
+    <div class="text-center md:text-left">
+      <h1
+        class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4"
+      >
+        {heroGreeting}
+      </h1>
+      <p class="text-2xl md:text-3xl font-medium text-muted-foreground mb-2">
+        <span>{heroSubtitlePart1}</span>
+        <span class="text-primary"> | </span>
+        <span>{heroSubtitlePart2}</span>
+      </p>
+      <p class="text-lg text-muted-foreground mb-8">
+        {heroIntroduction}
+      </p>
+      <div
+        class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start"
+      >
+        <a
+          href="/projects"
+          class={buttonVariants({ variant: 'default', size: 'lg' })}
+        >
+          <Dumbbell className="mr-2 size-4" />
+          {heroViewWorkButton}
+        </a>
+        <a
+          href={getRelativeLocaleUrl(lang, '/contact')}
+          class={buttonVariants({ variant: 'outline', size: 'lg' })}
+        >
+          <Calendar className="mr-2 size-4" />
+          {heroContactButton}
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* Featured Projects Section */}
+<section id="projects" class="py-12 md:py-16 bg-muted/20 dark:bg-muted/10">
+  <Heading
+    title={featuredProjectsTitle}
+    description={featuredProjectsDescription}
+    className="flex flex-col items-center"
+  />
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    {
+      projects.slice(0, 3).map((project: TranslatedProject) => {
+        return (
+          <FeaturedProjectPreview
+            lang={lang}
+            slug={project.slug}
+            title={project.title}
+            imageUrl={project.imageUrl}
+            imageAltText={project.imageAltText}
+            ctaText={projectPreviewCtaText}
+          />
+        );
+      })
+    }
+  </div>
+</section>
+
+{/* Skills Section */}
+<section id="skills" class="py-12 md:py-16">
+  <div class="container mx-auto px-4">
+    <Heading
+      title={mySkillsTitle}
+      description={mySkillsDescription}
+      className="flex flex-col items-center"
+    />
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        skills.map((skill) => (
+          <SkillCard
+            title={skill.title}
+            description={skill.description}
+            iconName={skill.iconName}
+            technologies={skill.technologies}
+          />
+        ))
+      }
+    </div>
+  </div>
+</section>
