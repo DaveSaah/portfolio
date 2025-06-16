@@ -1,0 +1,31 @@
+---
+import { BlogPostDetailScreen } from '@/features/blog';
+import { defaultLanguage, type LanguageCode } from '@/i18n/ui';
+import { getCollection, render } from 'astro:content';
+
+let lang = defaultLanguage as LanguageCode;
+
+export async function getStaticPaths() {
+  const blogEntries = await getCollection('blog', ({ data }) => {
+    return data.isDraft !== true && data.lang === defaultLanguage;
+  });
+  return blogEntries.map((post) => ({
+    params: { slug: post.id },
+    props: { post },
+  }));
+}
+const { post } = Astro.props;
+
+const { Content, remarkPluginFrontmatter } = await render(post);
+---
+
+<BlogPostDetailScreen
+  post={{
+    ...post.data,
+    readingTimeMinutes: remarkPluginFrontmatter.readingTimeMinutes,
+  }}
+  lang={lang}
+  filePath={post.filePath ? post.filePath : ''}
+>
+  <Content />
+</BlogPostDetailScreen>
