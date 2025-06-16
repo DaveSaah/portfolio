@@ -1,6 +1,6 @@
 // Import i18n utilities
 import { ui, defaultLanguage, type LanguageCode } from '@/i18n/ui';
-import portfolioImg from '@/assets/author.jpeg';
+import portfolioImg from '@/assets/portfolio.jpeg';
 import type {
   ProjectData,
   SkillData,
@@ -15,7 +15,7 @@ const projectsListUnsorted: Array<ProjectData> = [
     imageUrl: portfolioImg, // Use imported ImageMetadata
     // projectUrl: '#', // Optional: Link to the live project
     // codeUrl: '#', // Optional: Link to the source code
-    tags: ['Astro', 'TypeScript', 'HTML', 'CSS', 'TailwindCSS'], // Generic tags
+    tags: ['Astro', 'TypeScript', 'HTML', 'TailwindCSS'], // Generic tags
     category: 'Web Application', // Generic category
     date: '2025-06-15', // Generic date
     galleryImages: [
