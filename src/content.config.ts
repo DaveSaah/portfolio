@@ -29,7 +29,7 @@ const tipsCollection = defineCollection({
     pattern: '**/*.mdx',
     base: './src/features/tips/content',
   }),
-  schema: ({ image }) =>
+  schema: ({}) =>
     z.object({
       title: z.string(),
       description: z.string().optional(),
@@ -37,15 +37,7 @@ const tipsCollection = defineCollection({
       updatedDate: z.coerce.date().optional(),
       tags: z.array(z.string()).optional(),
       isDraft: z.boolean().default(false),
-      heroImage: z
-        .object({
-          url: image(),
-          alt: z.string(),
-        })
-        .optional(),
       lang: z.string().optional().default('en'),
-      relatedTips: z.array(reference('tips')).optional(),
-      featured: z.boolean().optional(),
       difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
     }),
 });

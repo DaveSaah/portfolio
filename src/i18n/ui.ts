@@ -182,16 +182,15 @@ export const ui = {
     },
 
     tipsPage: {
-      metaTitle: 'Development Tips | David Saah',
+      metaTitle: 'Tips | David Saah',
       metaDescription:
-        'Browse a collection of quick tips and advice on Web Development and Cloud Computing.',
+        'Browse a collection of quick tips and insights on career and technology.',
       title: 'Latest Tips',
       description:
-        'Browse a collection of quick tips and advice on Web Development and Cloud Computing.',
+        'Browse a collection of quick tips and insights on career and technology.',
       noTips: 'No tips to display at the moment.',
       readTip: 'Read tip',
       backToList: 'Back to list',
-      featuredTips: 'Featured Tips',
       allTips: 'All Tips',
       tipsAvailable: 'tips available',
       tipAvailable: 'tip available',
