@@ -41,13 +41,46 @@ export const ui = {
       },
     },
     skillsContent: {
+      leadership: {
+        title: 'Leadership',
+        description:
+          "I'm a visionary leader who inspires action and steps in to fill gaps, ensuring my team stays aligned and productive.",
+      },
+      technicalWriting: {
+        title: 'Technical Writing',
+        description:
+          'I simplify complex concepts, presenting them in clear, easily understandable formats.',
+      },
+      sda: {
+        title: 'Software Design',
+        description: 'I design detailed plans for building robust systems.',
+      },
+      os: {
+        title: 'Operating System Installation',
+        description:
+          'I can setup and install any Linux OS on your personal computer or server without any error in less than an hour.',
+      },
+      agility: {
+        title: 'Agility',
+        description:
+          'I can quickly navigate and understand unfamiliar codebases, making non-breaking changes within hours, regardless of the technology used.',
+      },
       backendDevelopment: {
         title: 'Backend Development',
-        description: 'Constructing robust server logic and APIs.',
+        description: 'I construct robust server logic and APIs.',
       },
       devOps: {
         title: 'DevOps',
-        description: 'Automating development and deployment processes.',
+        description:
+          'I automate software development and deployment processes.',
+      },
+      database: {
+        title: 'Database Management',
+        description: 'I design database schema for businesses.',
+      },
+      teacher: {
+        title: 'Teacher',
+        description: 'I train learners to solve problems by themselves.',
       },
     },
     site: {
@@ -76,8 +109,6 @@ export const ui = {
         'I solve problems with people and empower businesses to succeed.',
       heroViewWorkButton: 'View My Work',
       heroContactButton: 'Get In Touch',
-      heroImageAlt:
-        'Illustration representing David Saah or a development concept',
       featuredProjectsTitle: '3 latest projects',
       featuredProjectsDescription:
         "Here are some of the projects I've recently worked on. Feel free to explore!",

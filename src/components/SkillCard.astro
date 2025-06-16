@@ -1,48 +1,47 @@
 ---
 // src/components/SkillCard.astro
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import {
-  Card,
-  CardHeader,
-  CardTitle,
-  CardContent,
-  CardFooter,
-} from '@/components/ui/card';
-import {
-  MonitorSmartphone,
   ServerCog,
   Database,
   PenTool,
   Network,
   type LucideIcon,
+  GraduationCap,
+  Sprout,
+  Blocks,
+  Zap,
+  Settings,
 } from 'lucide-react';
 
 // Define the mapping from iconName to Lucide icon component
 // Mapping for Lucide icons (general skill category)
 const iconComponents: Record<string, LucideIcon> = {
-  MonitorSmartphone,
   ServerCog,
   Database,
   PenTool,
   Network,
+  GraduationCap,
+  Sprout,
+  Blocks,
+  Zap,
+  Settings,
 };
-
-import type { Technology } from '@/features/projects';
 
 export type Props = {
   title: string;
   description: string;
   iconName: string;
-  technologies?: Array<Technology>;
 };
 
-const { title, description, iconName, technologies = [] } = Astro.props;
+const { title, description, iconName } = Astro.props;
 const IconComponent = iconComponents[iconName];
 ---
 
 <Card
   className="flex flex-col h-full hover:shadow-lg transition-shadow duration-300 gap-3 pt-2"
 >
-  <CardHeader className="pb-3 pt-4">
+  <CardHeader className="pb-2 pt-4">
     {/* Adjusted padding for consistency */}
     {/* User's modified header structure - ensure it's correctly aligned */}
     {/* CardTitle itself is not a flex container, the div inside it is. */}
@@ -67,7 +66,7 @@ const IconComponent = iconComponents[iconName];
     </div>
   </CardHeader>
 
-  <CardContent className="flex-grow pt-2 pb-3">
+  <CardContent className="flex-grow pb-3">
     {/* flex-grow pushes footer down, padding adjusted */}
     {
       /* Description text indented to align with title. Calculation: icon div's mr-4 (1rem) + icon span's effective width (approx 2.25rem) = 3.25rem */
@@ -76,14 +75,4 @@ const IconComponent = iconComponents[iconName];
       {description}
     </p>
   </CardContent>
-
-  {
-    technologies && technologies.length > 0 && (
-      <CardFooter className="pt-3 pb-4 flex flex-wrap gap-x-3 gap-y-2 justify-start items-center">
-        {technologies.map((tech) => {
-          return <p class="text-xs">{tech}</p>;
-        })}
-      </CardFooter>
-    )
-  }
 </Card>

@@ -74,7 +74,6 @@ export type TranslatedProject = ProjectData & {
 export type SkillData = {
   id: string; // Unique identifier for the skill, used for i18n keys
   iconName: string; // Name of the Lucide icon
-  technologies: Array<string>;
 };
 
 // Define the type for a skill once its content is translated

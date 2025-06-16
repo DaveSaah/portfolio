@@ -171,21 +171,40 @@ export function getTranslatedProjectBySlug(
 // Skills
 export const skillsList: Array<SkillData> = [
   {
+    id: 'leadership',
+    iconName: 'Sprout',
+  },
+  {
+    id: 'technicalWriting',
+    iconName: 'PenTool',
+  },
+  {
+    id: 'sda',
+    iconName: 'Blocks',
+  },
+  {
+    id: 'agility',
+    iconName: 'Zap',
+  },
+  {
+    id: 'os',
+    iconName: 'Settings',
+  },
+  {
+    id: 'teacher',
+    iconName: 'GraduationCap',
+  },
+  {
     id: 'backendDevelopment',
     iconName: 'ServerCog',
-    technologies: ['Go', 'REST APIs'],
   },
   {
     id: 'devOps',
     iconName: 'Network',
-    technologies: [
-      'Git',
-      'Linux',
-      'Docker',
-      'Netlify',
-      'Digital Ocean',
-      'Github Actions',
-    ],
+  },
+  {
+    id: 'database',
+    iconName: 'Database',
   },
 ];
 
