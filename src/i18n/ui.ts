@@ -91,11 +91,10 @@ export const ui = {
     blogPage: {
       pageTitle: 'Blog | David Saah',
       pageDescription:
-        'Articles and thoughts on web development, software architecture, and new technologies.',
-      title: 'My Technical Blog',
+        'Articles and thoughts on leadership, collaboration, software architecture, and software technologies.',
+      title: 'My Blog',
       description:
-        'Articles and thoughts on web development, software architecture, and new technologies.',
-      comingSoon: 'Blog posts will appear here soon. Check back later!',
+        'Articles and thoughts on leadership, collaboration, software architecture, and software technologies.',
       heroImageAlt: 'Hero image for article: ',
       publishedOn: 'Published on: ',
       readMore: 'Read more',
@@ -113,7 +112,6 @@ export const ui = {
       heroImageAlt: 'Hero image for article: ',
       backToList: 'Back to blog list',
       readingTimeSuffix: 'min read',
-      relatedPostsTitle: 'Continue Reading',
       readMore: 'Read more',
     },
     toc: {

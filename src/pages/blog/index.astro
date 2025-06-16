@@ -8,8 +8,8 @@ const t = useTranslations(lang, 'blogPage');
 
 const blogEntries: Array<CollectionEntry<'blog'>> = await getCollection(
   'blog',
-  ({ data, id }) => {
-    return data.isDraft !== true && id.startsWith('fr/');
+  ({ data }) => {
+    return data.isDraft !== true;
   }
 );
 

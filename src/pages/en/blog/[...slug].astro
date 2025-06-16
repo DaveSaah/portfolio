@@ -1,7 +1,7 @@
 ---
 import { BlogPostDetailScreen } from '@/features/blog';
 import { type LanguageCode } from '@/i18n/ui';
-import { getCollection, getEntries, render } from 'astro:content';
+import { getCollection, render } from 'astro:content';
 
 let lang = 'en' as LanguageCode;
 
@@ -16,28 +16,6 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const baseRelatedPosts = post.data.relatedPosts
-  ? await getEntries(post.data.relatedPosts)
-  : [];
-
-const enrichedRelatedPostsPromises = baseRelatedPosts.map(
-  async (relatedEntry) => {
-    if (!relatedEntry) return null;
-    const { remarkPluginFrontmatter: relatedFm } = await render(relatedEntry);
-    return {
-      id: relatedEntry.id,
-      slug: relatedEntry.id,
-      collection: relatedEntry.collection,
-      data: {
-        ...relatedEntry.data,
-        readingTimeMinutes: relatedFm.readingTimeMinutes,
-      },
-    };
-  }
-);
-const finalRelatedPosts = (
-  await Promise.all(enrichedRelatedPostsPromises)
-).filter((p) => p !== null);
 
 const { Content, remarkPluginFrontmatter } = await render(post);
 ---
@@ -48,7 +26,6 @@ const { Content, remarkPluginFrontmatter } = await render(post);
     readingTimeMinutes: remarkPluginFrontmatter.readingTimeMinutes,
   }}
   lang={lang}
-  relatedPosts={finalRelatedPosts}
   filePath={post.filePath ? post.filePath : ''}
 >
   <Content />

@@ -11,12 +11,12 @@ export type Props = {
 
 const { entry } = Astro.props;
 const post = entry.data;
-const GITHUB_USER = 'YOUR_GITHUB_USERNAME';
-const GITHUB_REPO = 'YOUR_GITHUB_REPO';
-const GITHUB_BRANCH = 'YOUR_GITHUB_BRANCH';
+const GITHUB_USER = 'davesaah';
+const GITHUB_REPO = 'portfolio';
+const GITHUB_BRANCH = 'main';
 const editUrl = `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/edit/${GITHUB_BRANCH}/src/content/blog/${entry.id}`;
 
-const t = useTranslations(lang, 'blogPost');
+const t = useTranslations('en', 'blogPost');
 
 const { pubDate, updatedDate } = post;
 ---
@@ -50,20 +50,6 @@ const { pubDate, updatedDate } = post;
       }
     </header>
 
-    {
-      post.heroImage && (
-        <Image
-          src={post.heroImage.url}
-          alt={t('heroImageAlt') + post.title}
-          class="w-full h-auto rounded-lg mb-8 shadow-lg"
-          width={768}
-          height={432}
-          densities={[1, 1.5, 2]}
-          quality="mid"
-        />
-      )
-    }
-
     <div class="prose-content">
       <slot />
     </div>
@@ -80,7 +66,7 @@ const { pubDate, updatedDate } = post;
         rel="noopener noreferrer"
         class="text-sm text-muted-foreground hover:text-primary hover:underline"
       >
-        {t('editOnGithub')}
+        Edit on GitHub
       </a>
     </footer>
   </article>

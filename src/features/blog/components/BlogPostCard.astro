@@ -11,7 +11,6 @@ import {
 import type { LanguageCode } from '@/i18n/ui';
 import { useTranslations } from '@/i18n/ui';
 import { formatDate } from '@/lib/utils';
-import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { Clock } from 'lucide-react';
@@ -30,25 +29,8 @@ const t = useTranslations(lang, 'blogPost');
   class="block group rounded-lg focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
 >
   <Card
-    className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 pt-0 h-full flex flex-col"
+    className="rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 pt-6 h-full flex flex-col"
   >
-    {
-      post.data.heroImage ? (
-        <div class="w-full h-48 overflow-hidden rounded-t-lg flex-shrink-0">
-          <Image
-            src={post.data.heroImage.url}
-            alt={post.data.heroImage.alt}
-            class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-            width={768}
-            height={432}
-            densities={[1, 1.5, 2]}
-            quality="mid"
-          />
-        </div>
-      ) : (
-        <div class="w-full h-12 bg-muted" />
-      )
-    }
     <CardHeader className="flex-shrink-0">
       <CardTitle
         className="text-xl font-semibold line-clamp-1 group-hover:text-primary transition-colors"
@@ -56,7 +38,7 @@ const t = useTranslations(lang, 'blogPost');
         {post.data.title}
       </CardTitle>
       <CardDescription className="flex justify-between pt-1">
-        <p>{t('publishedOn') + formatDate(post.data.pubDate, lang)}</p>
+        <p>{t('publishedOn') + formatDate(post.data.pubDate)}</p>
         {
           post.data.readingTimeMinutes != null ? (
             <p class="flex items-center">

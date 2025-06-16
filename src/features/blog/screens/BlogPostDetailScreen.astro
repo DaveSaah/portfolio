@@ -10,21 +10,19 @@ import { Image } from 'astro:assets';
 import type { CollectionEntry } from 'astro:content';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { ArrowLeft, Clock, Pencil } from 'lucide-react';
-import BlogPostCard from '../components/BlogPostCard.astro';
 
 type Props = {
   post: CollectionEntry<'blog'>['data'];
   lang: LanguageCode;
-  relatedPosts: Array<CollectionEntry<'blog'>>;
   filePath: string;
 };
 
-const { post, lang, relatedPosts, filePath } = Astro.props;
+const { post, lang, filePath } = Astro.props;
 
 // Construct the GitHub edit URL
-const GITHUB_USER = 'YOUR_GITHUB_USERNAME';
-const GITHUB_REPO = 'YOUR_GITHUB_REPO';
-const GITHUB_BRANCH = 'YOUR_GITHUB_BRANCH';
+const GITHUB_USER = 'davesaah';
+const GITHUB_REPO = 'portfolio';
+const GITHUB_BRANCH = 'main';
 const editUrl = `https://github.com/${GITHUB_USER}/${GITHUB_REPO}/edit/${GITHUB_BRANCH}/${filePath}`;
 
 const pubDate = new Date(post.pubDate);
@@ -53,14 +51,14 @@ const pageDescription = post.description;
       >
         <p class="flex items-center gap-1">
           <b>{t('publishedOn')}</b>
-          <span>{formatDate(pubDate, lang)}</span>
+          <span>{formatDate(pubDate)}</span>
         </p>
         <p class="flex items-center gap-1">
           {
             updatedDate ? (
               <>
                 <span class="font-medium">{t('updatedOn')}</span>
-                <span>{formatDate(updatedDate, lang)}</span>
+                <span>{formatDate(updatedDate)}</span>
               </>
             ) : null
           }
@@ -107,26 +105,9 @@ const pageDescription = post.description;
           class={buttonVariants({ variant: 'ghost' }) + ' hover:underline'}
         >
           <Pencil className=" size-4" />
-          {t('editOnGithub') || 'Proposer une modification sur GitHub'}
+          Edit on GitHub
         </a>
       </div>
     </div>
-
-    <!-- Related Posts Section -->
-    {
-      relatedPosts.length > 0 ? (
-        <section class="mt-12 pt-8 border-t border-border">
-          <Heading
-            title={t('relatedPostsTitle')}
-            titleClassName="md:text-2xl font-semibold"
-          />
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {relatedPosts.map((relatedPost) => (
-              <BlogPostCard post={relatedPost} lang={lang} />
-            ))}
-          </div>
-        </section>
-      ) : null
-    }
   </article>
 </BaseLayout>
