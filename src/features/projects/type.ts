@@ -76,6 +76,16 @@ export type SkillData = {
   iconName: string; // Name of the Lucide icon
 };
 
+export type ValueData = {
+  id: string; // Unique identifier for the value, used for i18n keys
+};
+
+// Define the type for a value once its content is translated
+export type TranslatedValue = ValueData & {
+  title: string;
+  description: string;
+};
+
 // Define the type for a skill once its content is translated
 export type TranslatedSkill = SkillData & {
   title: string;

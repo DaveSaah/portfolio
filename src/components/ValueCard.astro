@@ -1,0 +1,28 @@
+---
+// src/components/ValueCard.astro
+import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
+export type Props = {
+  title: string;
+  description: string;
+};
+
+const { title, description } = Astro.props;
+---
+
+<Card
+  className="flex flex-col h-full hover:shadow-lg transition-shadow duration-300 gap-3 pt-2"
+>
+  <CardHeader className="pb-2 pt-4">
+    <CardTitle
+      className="text-lg text-center font-semibold group-hover:text-primary transition-colors"
+    >
+      {title}
+    </CardTitle>
+  </CardHeader>
+
+  <CardContent className="flex-grow pb-3">
+    <p class="text-sm text-muted-foreground line-clamp-3">
+      {description}
+    </p>
+  </CardContent>
+</Card>

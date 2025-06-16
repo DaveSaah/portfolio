@@ -6,6 +6,8 @@ import type {
   SkillData,
   TranslatedProject,
   TranslatedSkill,
+  TranslatedValue,
+  ValueData,
 } from './type';
 
 const projectsListUnsorted: Array<ProjectData> = [
@@ -208,6 +210,33 @@ export const skillsList: Array<SkillData> = [
   },
 ];
 
+export const ValuesList: Array<ValueData> = [
+  {
+    id: 'idw',
+  },
+  {
+    id: 'cl',
+  },
+  {
+    id: 'onboarding',
+  },
+  {
+    id: 'challenge',
+  },
+  {
+    id: 'communication',
+  },
+  {
+    id: 'innovation',
+  },
+  {
+    id: 'sundays',
+  },
+  {
+    id: 'growth',
+  },
+];
+
 // Function to get skills with translated content
 export function getTranslatedSkills(
   lang: LanguageCode | undefined
@@ -241,6 +270,43 @@ export function getTranslatedSkills(
       ...skill, // This includes id and iconName
       title: skillTranslations.title,
       description: skillTranslations.description,
+    };
+  });
+}
+
+// Function to get values with translated content
+export function getTranslatedValues(
+  lang: LanguageCode | undefined
+): Array<TranslatedValue> {
+  const currentLang = lang ?? defaultLanguage;
+
+  return ValuesList.map((value) => {
+    type valueIdKey =
+      keyof (typeof ui)[typeof defaultLanguage]['valuesContent'];
+    const currentValueId = value.id as valueIdKey;
+
+    const valueContentSource = ui[currentLang]?.valuesContent?.[currentValueId]
+      ? ui[currentLang].valuesContent
+      : ui[defaultLanguage].valuesContent;
+
+    const valueTranslations = valueContentSource[currentValueId];
+
+    if (!valueTranslations) {
+      // Fallback if translation for the value ID is missing
+      console.warn(
+        `Translation missing for value ID: ${value.id} in language: ${lang}. Using default values.`
+      );
+      return {
+        ...value,
+        title: value.id, // Fallback title
+        description: 'Description missing for this value.', // Fallback description
+      };
+    }
+
+    return {
+      ...value,
+      title: valueTranslations.title,
+      description: valueTranslations.description,
     };
   });
 }

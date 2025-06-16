@@ -1,18 +1,24 @@
 ---
 import Heading from '@/components/Heading.astro';
 import SkillCard from '@/components/SkillCard.astro';
+import ValueCard from '@/components/ValueCard.astro';
 import { buttonVariants } from '@/components/ui/button';
 import type { LanguageCode } from '@/i18n/ui';
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { Calendar, Dumbbell } from 'lucide-react';
 
 import FeaturedProjectPreview from '../components/FeaturedProjectPreview.astro';
-import type { TranslatedProject, TranslatedSkill } from '../type';
+import type {
+  TranslatedProject,
+  TranslatedSkill,
+  TranslatedValue,
+} from '../type';
 
 export type Props = {
   lang: LanguageCode;
   projects: Array<TranslatedProject>;
   skills: Array<TranslatedSkill>;
+  values: Array<TranslatedValue>;
   heroGreeting: string;
   heroSubtitlePart1: string;
   heroSubtitlePart2: string;
@@ -24,6 +30,8 @@ export type Props = {
   featuredProjectsDescription: string;
   mySkillsTitle: string;
   mySkillsDescription: string;
+  myValuesTitle: string;
+  myValuesDescription: string;
   projectPreviewCtaText: string; // Added for specific project CTA
 };
 
@@ -31,6 +39,7 @@ const {
   lang,
   projects,
   skills,
+  values,
   heroGreeting,
   heroSubtitlePart1,
   heroSubtitlePart2,
@@ -42,6 +51,8 @@ const {
   mySkillsTitle,
   mySkillsDescription,
   projectPreviewCtaText,
+  myValuesTitle,
+  myValuesDescription,
 } = Astro.props;
 ---
 
@@ -110,6 +121,24 @@ const {
   </div>
 </section>
 
+{/* Values Section */}
+<section class="py-12 md:py-16">
+  <div class="container mx-auto px-4">
+    <Heading
+      title={myValuesTitle}
+      description={myValuesDescription}
+      className="flex flex-col items-center"
+    />
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        values.map((value) => (
+          <ValueCard title={value.title} description={value.description} />
+        ))
+      }
+    </div>
+  </div>
+</section>
+
 {/* Skills Section */}
 <section id="skills" class="py-12 md:py-16">
   <div class="container mx-auto px-4">
@@ -125,7 +154,6 @@ const {
             title={skill.title}
             description={skill.description}
             iconName={skill.iconName}
-            technologies={skill.technologies}
           />
         ))
       }

@@ -40,6 +40,47 @@ export const ui = {
           "I learned about how other developers choose to structure their code and make it extensible. I mean, not all the design decisions where suitable for my use case, but it was amazing to see how customising it was easier. Takeways: You can't cover all use cases and make it easier for other developers to delete your code.",
       },
     },
+    valuesContent: {
+      idw: {
+        title: 'Impact-Driven Work',
+        description:
+          'A role where my contributions directly create value for the company, customers, and team.',
+      },
+      cl: {
+        title: 'Continuous Learning',
+        description:
+          'A company that invests in employee growth through structured learning budgets and upskilling opportunities.',
+      },
+      onboarding: {
+        title: 'Structured Onboarding',
+        description:
+          'A 3-month buddy program with mentorship for a smooth transition.',
+      },
+      communication: {
+        title: 'Clear Communication',
+        description:
+          'Defined hierarchies and channels for addressing concerns and seeking guidance.',
+      },
+      innovation: {
+        title: 'Innovation Culture ',
+        description:
+          'A company open to new ideas and experimentation while maintaining stability.',
+      },
+      sundays: {
+        title: 'Protected Sundays (Non-negotiable)',
+        description: 'No work on Sundays to honor my church commitments.',
+      },
+      growth: {
+        title: 'Career Growth',
+        description:
+          'A well-defined path for advancement into leadership or specialized roles.',
+      },
+      challenge: {
+        title: 'Challenging & Evolving Environment',
+        description:
+          'A workplace that pushes me to grow and develop continuously.',
+      },
+    },
     skillsContent: {
       leadership: {
         title: 'Leadership',
@@ -115,6 +156,8 @@ export const ui = {
       projectCardViewProject: 'View Project',
       projectCardViewCode: 'View Code',
       imageNotAvailable: 'Image not available for now',
+      myValuesTitle: 'Career Values [Company]',
+      myValuesDescription: "Find out what I'm looking for in a company.",
       mySkillsTitle: 'My Skills',
       mySkillsDescription:
         'Explore the expertise and abilities that define my work and passion.',

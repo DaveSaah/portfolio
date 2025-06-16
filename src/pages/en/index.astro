@@ -6,6 +6,8 @@ import {
   getTranslatedSkills,
   type TranslatedSkill,
   type TranslatedProject,
+  getTranslatedValues,
+  type TranslatedValue,
 } from '@/features/projects';
 import { defaultLanguage, useTranslations, type LanguageCode } from '@/i18n/ui';
 
@@ -18,11 +20,13 @@ const pageDescription = t('pageDescription');
 
 const projects: Array<TranslatedProject> = getTranslatedProjects(lang);
 const skills: Array<TranslatedSkill> = getTranslatedSkills(lang);
+const values: Array<TranslatedValue> = getTranslatedValues(lang);
 
 const layoutProps = {
   lang,
   projects,
   skills,
+  values,
   heroGreeting: t('heroGreeting'),
   heroSubtitlePart1: t('heroSubtitlePart1'),
   heroSubtitlePart2: t('heroSubtitlePart2'),
@@ -34,6 +38,8 @@ const layoutProps = {
   featuredProjectsDescription: t('featuredProjectsDescription'),
   mySkillsTitle: t('mySkillsTitle'),
   mySkillsDescription: t('mySkillsDescription'),
+  myValuesTitle: t('myValuesTitle'),
+  myValuesDescription: t('myValuesDescription'),
   projectPreviewCtaText: t('projectCardViewProject'),
 };
 ---
