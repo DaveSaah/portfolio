@@ -1,10 +1,3 @@
-# -- Theme Options --
-# These options control how the theme functions and allow you to
-# customise the display of your website.
-#
-# Refer to the theme docs for more details about each of these parameters.
-# https://jpanther.github.io/congo/docs/configuration/#theme-parameters
-
 colorScheme = "cherry"
 defaultAppearance = "dark"  # valid options: light or dark
 autoSwitchAppearance = true
@@ -17,13 +10,11 @@ enableImageLazyLoading = true
 enableImageWebp = true
 enableQuicklink = true
 
-# robots = ""
+robots = "all"
 fingerprintAlgorithm = "sha256"
 
 [header]
 layout = "hybrid" # valid options: basic, hamburger, hybrid, custom
-# logo = "img/logo.jpg"
-# logoDark = "img/dark-logo.jpg"
 showTitle = true
 
 [footer]

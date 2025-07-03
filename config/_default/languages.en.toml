@@ -3,20 +3,19 @@ languageName = "English"
 languageDirection = "ltr"
 weight = 1
 
-title = "DaveSaah's Portfolio"
+title = "DaveSaah"
 
 [params]
 dateFormat = "2 January 2006"
-
 description = "Portfolio website of David Saah."
 
 [params.author]
 name = "David Saah"
 image = "img/author.jpeg"
-headline = "Solving Problems With People, Empowering Businesses to Succeed."
+headline = "Problem Solver & Ambassador"
 bio = "Portfolio website of David Saah."
 links = [
-  { email = "mailto:davesaah@gmail.com" },
-  { github = "https://github.com/davesaah" },
-  { x-twitter = "https://x.com/_davesaah" },
+    { email = "mailto:davesaah@gmail.com" },
+    { github = "https://github.com/davesaah" },
+    { x-twitter = "https://x.com/_davesaah" },
 ]
